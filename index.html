@@ -87,16 +87,13 @@
     }
     .hero-right { display: none; }
     .hero-content { max-width: 540px; }
-    .hero-tag { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
-    .hero-tag-line { width: 40px; height: 1px; background: var(--gold); }
-    .hero-tag span { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.25em; text-transform: uppercase; color: var(--gold); }
-    .hero-specialty { font-size: 0.78rem; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: rgba(201,168,76,0.75); margin-bottom: 28px; }
+    .hero-specialty { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase; color: rgba(201,168,76,0.7); margin-bottom: 36px; display: flex; align-items: center; gap: 14px; }
+    .hero-specialty::before { content: ''; width: 36px; height: 1px; background: rgba(201,168,76,0.5); flex-shrink: 0; }
     .hero-content h1 {
-      font-family: var(--serif); font-size: clamp(2.6rem, 4vw, 4rem);
-      font-weight: 700; line-height: 1.08; margin-bottom: 24px;
+      font-family: var(--serif); font-size: clamp(2.8rem, 4.5vw, 4.4rem);
+      font-weight: 700; line-height: 1.07; margin-bottom: 48px;
     }
     .hero-content h1 em { color: var(--gold); font-style: normal; display: block; }
-    .hero-content > p { font-size: 1rem; color: var(--light); line-height: 1.75; margin-bottom: 40px; }
     .hero-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 56px; }
     .hero-divider { width: 100%; height: 1px; background: rgba(255,255,255,0.08); margin-bottom: 32px; }
     .hero-stat { display: flex; align-items: center; gap: 20px; }
@@ -388,13 +385,8 @@
 <section id="hero">
   <div class="hero-left">
     <div class="hero-content">
-      <div class="hero-tag">
-        <div class="hero-tag-line"></div>
-        <span>Serving Jacksonville, St. Augustine, Nocatee, Ponte Vedra &amp; Surrounding Areas</span>
-      </div>
       <div class="hero-specialty">Epoxy &nbsp;·&nbsp; Polyaspartic &nbsp;·&nbsp; Concrete Stain</div>
       <h1>Built with purpose.<br /><em>Driven by integrity.</em><br />Finished with excellence.</h1>
-      <p>Premium polyaspartic systems, metallic pigment, flake epoxy, and decorative staining — delivered with uncompromising discipline and an eye for perfection.</p>
       <div class="hero-btns">
         <a href="#estimate" class="btn btn-gold">Get Free Estimate</a>
         <a href="#services" class="btn btn-outline">View Services</a>
