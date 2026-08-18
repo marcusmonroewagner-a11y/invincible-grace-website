@@ -319,6 +319,11 @@
       .about-text { padding: 56px 40px; }
       .surfaces-strip { grid-template-columns: repeat(3, 1fr); }
       .footer-top { grid-template-columns: 1fr 1fr; }
+      /* Florida Factor — 2 cols on tablet */
+      .why-cards { grid-template-columns: repeat(2, 1fr); }
+      /* Service Area — stack on tablet */
+      .area-wrap { grid-template-columns: 1fr; }
+      .area-map iframe { height: 380px; }
     }
     @media (max-width: 768px) {
       .nav-links, .nav-cta { display: none; }
@@ -328,6 +333,17 @@
       .est-bullets-row { flex-direction: column; align-items: center; gap: 14px; }
       .form-box { padding: 32px 24px; }
       .about-banner { padding: 40px 28px; }
+      /* Florida Factor — collapse invest panel */
+      #florida-why { padding: 64px 0; }
+      .why-inner { padding: 0 24px; }
+      .why-header { margin-bottom: 40px; }
+      .why-invest { grid-template-columns: 1fr; }
+      .why-invest-text { border-right: none; border-bottom: 1px solid rgba(201,168,76,0.18); padding: 32px 28px; }
+      .why-stats-panel { padding: 32px 28px; grid-template-columns: 1fr 1fr; gap: 24px; }
+      /* Service Area — mobile sizing */
+      #service-area { padding: 64px 0; }
+      .area-inner { padding: 0 24px; }
+      .area-map iframe { height: 300px; }
     }
     @media (max-width: 560px) {
       .surfaces-strip { grid-template-columns: repeat(2, 1fr); }
@@ -335,6 +351,11 @@
       .footer-bottom { flex-direction: column; text-align: center; }
       .tl-item { grid-template-columns: 56px 1fr; gap: 20px; }
       .svc-text { padding: 40px 28px; }
+      /* Florida Factor — single column cards on small phones */
+      .why-cards { grid-template-columns: 1fr; }
+      .why-stats-panel { grid-template-columns: 1fr 1fr; }
+      /* Service Area — shorter map on small phones */
+      .area-map iframe { height: 260px; }
     }
   </style>
 </head>
